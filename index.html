@@ -1,0 +1,526 @@
+<html>
+
+<head>
+	<title> Pepe Tatuapé | A Sua Casa</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+		integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="icon" type="imagem/png" href="./img/pepe.png" />
+	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="https://unpkg.com/flickity@2.0/dist/flickity.min.css">
+	<link href='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css'>
+	<link href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+	<link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.5.2/jquery.min.js"></script>
+	<script type="text/javascript" src="js/events.js"></script>
+</head>
+
+<body>
+
+<!-- Função para efeito scroll page -->
+	<script>
+		function rolar_para(elemento) {
+			$('html, body').animate({
+				scrollTop: $(elemento).offset().top
+			}, 1000);
+		}
+	</script>
+<!-- ----------------------------- -->
+
+	<div class="top" id="index">
+		<div class="container-no">
+			<div class="logo">
+				<a href="index.html" onclick="rolar_para('#index')">
+					<img src="static/logo.png">
+				</a>
+			</div>
+			<div class="ofertas">
+				<a href="#lojas" onclick="rolar_para('#lojas')"> LOJAS </a>
+				<a id="oferta" href="#ofertas" onclick="rolar_para('#ofertas')"> OFERTAS </a>
+			</div>
+			<div class="redes-sociais">
+				<a class="wi" href="https://www.facebook.com/smpepe">
+					<img class="icone" src="img/icone facebook.png" />
+				</a>
+				<a class="wi-inst" href="https://www.instagram.com/supermercadopepe">
+					<img class="icone-inst" src="img/icone instagram.png" />
+				</a>
+			</div>
+		</div>
+	</div>
+	<div class="sub-top">
+		<nav class="menu">
+			<ul class="menu-list">
+				<li>
+					<a href="#">Sobre</a>
+					<ul class="sub-menu">
+						<li><a href="#">Pires do Rio</a></li>
+						<li><a href="#" data-toggle="modal" data-target="#modal">Tatuapé</a></li>
+						<li><a href="#">São Miguel</a></li>
+					</ul>
+				</li>
+				<li><a href="#ofertas" onclick="rolar_para('#ofertas-semana')">Ofertas</a></li>
+				<li>
+					<a href="#lojas" onclick="rolar_para('#lojas')">Lojas</a>
+					<ul class="sub-menu">
+						<li><a href="#" onclick="rolar_para('#lojas')">Pires do Rio</a></li>
+						<li><a href="#" onclick="rolar_para('#lojas')">Tatuapé</a></li>
+						<li><a href="#" onclick="rolar_para('#lojas')">São Miguel</a></li>
+					</ul>
+				</li>
+				<li><a href="#fornecedor" onclick="rolar_para('#fornecedor')"> Fornecedores</a></li>
+				<li><a href="#" data-toggle="" for="">Trabalhe Conosco</a></li>
+				<li><a href="#" onclick="rolar_para('#rodape')">Redes Sociais</a></li>
+				<li><a href="https://www.google.com/search?q=supermercado+pepe+tatuape&oq=supermercado+pepe+tatuape+&aqs=chrome..69i57j0l4.6512j1j7&sourceid=chrome&ie=UTF-8"
+						target="_blank" onclick="rolar_para('#')">Noticias</a></li>
+			</ul>
+		</nav>
+	</div>
+	<div class="carousel">
+		<div data-interval="4000" id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+			<ol class="carousel-indicators">
+				<li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+				<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+			</ol>
+			<div class="carousel-inner">
+				<div class="carousel-item active">
+					<img class="banner" src="img/banners/banner.jpg" alt="Primeiro Slide">
+				</div>
+				<div class="carousel-item">
+					<img class="banner" src="img/banners/banner.jpg" alt="Segundo Slide">
+				</div>
+				<div class="carousel-item">
+					<img class="banner" src="img/banners/banner.jpg" alt="Terceiro Slide">
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- PRODUTOS EM OFERTA -->
+	<div class="elementos" id="ofertas">
+		<div class="container-cont">
+			<a id="ofertas-semana" href="https://www.facebook.com/smpepe" target="_blank"> OFERTAS DA SEMANA PEPE TATUAPÉ </a>
+		</div>
+		<div class="style-image"></div>
+		<div class="carousel-wrapper">
+			<div class="carousel" data-flickity>
+				<div class="carousel-cell">
+
+					<h3>PALHA DE AÇO</h3>
+					<h2>BOMBRIL</h2>
+					<h5>Tradicional 30 grs.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/bombril.png" />
+					<div class="price"> R$ 1,99</div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>CAFÉ</h3>
+					<h2>3 CORAÇÕES</h2>
+					<h5>Tradicional 450GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/cafe.png" />
+					<div class="price"> R$ 6,99</div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>ACHOCOLATADO</h3>
+					<h2>NESCAU</h2>
+					<h5>Active Go 400GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/nescau.png" />
+					<div class="price"> R$ 4,99 </div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>REQUEIJÃO</h3>
+					<h2>TIROLEZ</h2>
+					<h5> Tradicional 290GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/tirolez.png" />
+					<div class="price"> R$ 3,69 </div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>ACHOCOLATADO</h3>
+					<h2>TODDY</h2>
+					<h5>Tradicional 380GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/toddy.png" />
+					<div class="price"> R$ 4,99 </div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>PALHA DE AÇO</h3>
+					<h2>BOMBRIL</h2>
+					<h5>Tradicional 30 grs.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/bombril.png" />
+					<div class="price"> R$ 1,99</div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>CAFÉ</h3>
+					<h2>3 CORAÇÕES</h2>
+					<h5>Tradicional 450GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/cafe.png" />
+					<div class="price"> R$ 6,99</div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>ACHOCOLATADO</h3>
+					<h2>NESCAU</h2>
+					<h5>Active Go 400GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/nescau.png" />
+					<div class="price"> R$ 4,99 </div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>REQUEIJÃO</h3>
+					<h2>TIROLEZ</h2>
+					<h5>Tradicional 290GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/tirolez.png" />
+					<div class="price"> R$ 3,69 </div>
+				</div>
+				<div class="carousel-cell">
+
+					<h3>ACHOCOLATADO</h3>
+					<h2>TODDY</h2>
+					<h5>Tradicional 380GRS.</h5>
+
+					<a class="more" href=""></a>
+					<img src="img/produtos/toddy.png" />
+					<div class="price"> R$ 4,99 </div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-------------------LOJAS---------------------->
+	<section class="lojas" id="lojas">
+		<div class="container">
+			<div class="text-lojas">
+				<h1>LOJAS</h1>
+				<h4>Nossas unidades e suas localidades.</h4>
+			</div>
+
+			<div class="row">
+				<div class="col-md-4 mb-4">
+					<div class="card card-cascade narrower">
+						<div class="view view-cascade gradient-card-header blue-gradient">
+							<h5 id="nome-loja">PEPE TATUAPÉ</h5>
+						</div>
+						<div class="card-body card-body-cascade text-center">
+							<div id="map-container-google-8" class="z-depth-1-half map-container-5"
+								style="height: 300px">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0123078648794!2d-46.56118823656517!3d-23.532059730956778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fa5ca0612e9%3A0x29ccca77c99cf90b!2sSupermercado%20Pepe!5e0!3m2!1spt-BR!2sbr!4v1579094757827!5m2!1spt-BR!2sbr"
+									frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+								</iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card card-cascade narrower">
+						<div class="view view-cascade gradient-card-header blue-gradient">
+							<h5 id="nome-loja">PEPE PIRES DO RIO</h5>
+						</div>
+						<div class="card-body card-body-cascade text-center">
+							<div id="map-container-google-9" class="z-depth-1-half map-container-5"
+								style="height: 300px">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.6560099063176!2d-46.446415984872225!3d-23.50889656554234!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce61598e094a71%3A0xdbadb573926cbb90!2sSupermercados%20Pepe!5e0!3m2!1spt-BR!2sbr!4v1579101616373!5m2!1spt-BR!2sbr"
+									frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-md-4 mb-4">
+					<div class="card card-cascade narrower">
+						<div class="view view-cascade gradient-card-header blue-gradient">
+							<h5 id="nome-loja">PEPE SÃO MIGUEL</h5>
+						</div>
+						<div class="card-body card-body-cascade text-center">
+							<div id="map-container-google-9" class="z-depth-1-half map-container-5"
+								style="height: 300px">
+								<iframe
+									src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.5880001521336!2d-46.502088984872195!3d-23.511344865632534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce60927937d98d%3A0xee0998390ed14e0e!2sSupermercado%20Pepe.!5e0!3m2!1spt-BR!2sbr!4v1579101809767!5m2!1spt-BR!2sbr"
+									style="border:0;" allowfullscreen=""></iframe>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!----------------------->
+	<div class="fornecedor" id="fornecedor">
+		<div class="container-cont">
+			<a id="forn"> NOSSOS FORNECEDORES </a>
+		</div>
+		<!---------FORNECEDORES---------->
+		<div class="container">
+			<div class="row">
+				<div class="itens-forne">
+					<!-- Itens Fornecedor -->
+					<div class="carousel-inner">
+						<div class="item active">
+							<div class="row">
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.bimbobrasil.com.br/"
+										target="_blank" class="thumbnail"><img
+											src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSHbIy9YM7fb81Q-n7hw5Z1Ye-x8kzY5oW7gxkwSZME5ien6tnU"></a>
+								</div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.cocacola.com.br/pt/home/"
+										target="_blank" class="thumbnail"><img
+											src="https://static.wixstatic.com/media/e6efb3_f702e5f562e84d39b727aaf675871fac.jpg/v1/fill/w_500,h_500,al_c,q_90/e6efb3_f702e5f562e84d39b727aaf675871fac.webp"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.gomesdacosta.com.br/"
+										target="_blank" class="thumbnail"><img
+											src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSYdk_BSA6zQWCiBzyaeSCyEKuO_FixMz5loSrbYgmVcn1UpyU7"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="http://www.donabenta.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/donabenta.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.vigor.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/vigor2.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.ciauniao.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/união2.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.auroraalimentos.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/aurora2.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.sadia.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/sadia.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.dadinhooriginal.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/dadinho.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://jamava.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/jamava.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="http://www.argenzio.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/argenzio2.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.ype.ind.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/ype.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.fornodeminas.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/forno.png"
+											alt="Image"></a></div>
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.fornodeminas.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/jasmine.png"
+											alt="Image"></a></div>								
+								<div class="col-md-2 col-xs-4 forn-image"><a href="https://www.nestle.com.br/"
+										target="_blank" class="thumbnail"><img src="img/fornecedores/nestle.png"
+											alt="Image"></a></div>										
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!------------------------------->
+		</div>
+
+		<div class="faixa"></div>
+		<div class="rodape" id="rodape">
+			<footer id="myFooter">
+				<div class="container-footer">
+					<div class="row">
+						<div class="col-sm-3">
+							<h2 class="logo"><a href="#index"><img src="static/logo.png"/> </a></h2>
+						</div>
+						<div class="col-sm-3">
+							<h5>Formas de Pagamento</h5>
+							<div class="bandeiras">
+								<a href="#servicos"><img class="image-bandeiras" src="img/bandeiras/bandeirascredito.png"/></a>
+							</div>
+						</div>
+						<div class="col-sm-3">
+							<h5>Horário de Funcionamento</h5>
+							<ul>
+								<li>Seg - Sáb: 8:00 - 21:00</li>
+								<li>Dom e feriados: 8:00 - 14:00*</li>
+								<li class="perso">*Feriados e Domingos poderão ter alteração no horário de funcionamento</li>
+							</ul>
+						</div>
+						<!-- <div class="col-sm-2">
+							<h5>Suporte</h5>
+							<ul>
+								<li><a href="">FAQ</a></li>
+								<li><a href="">Telefones</a></li>
+								<li><a href="">Chat</a></li>
+							</ul>
+						</div> -->
+						<div class="col-sm-3">
+							<div class="social-networks">
+								<a href="" class="twitter"><i class="fa fa-twitter"></i></a>
+								<a href="https://www.facebook.com/smpepe" class="facebook"><i class="fa fa-facebook"></i></a>
+								<a href="https://instagram.com/supermercadopepe" class="instagram"><i class="fa fa-instagram"></i></a>
+							</div>
+							<a href="">
+								<button type="button" class="btn btn-default">Contato</button>
+							</a>
+						</div>
+					</div>
+				</div>
+				<div class="footer-copyright">
+					<p>© Pepe Tatuapé - Todos os direitos reservados | Powered By: <a href="https://www.instagram.com/mizag_" target="_blank"> Guilherme Ferreira </a></p>
+				</div>
+			</footer>
+			<div class="line-contact"></div>
+			<video autoplay="autoplay" loop="loop" muted="muted">
+				<source src="video/pepe4.mp4" type="video/mp4" />
+				<img src="img/reserva.png" />
+			</video>
+		</div>
+		<!-- TRABALHE CONOSCO - MODAL -->
+		<!-- Modal -->
+
+		<!-- ------------------------ -->
+		<!---------------------  SOBRE - LOJA - MODAIS   -------------------->
+		<div class="container">
+			<div class="modal" id="modal" tabindex="-1" role="dialog">
+				<div class="modal-dialog" role="document">
+					<div class="modal-content">
+						<div class="modal-header">
+							<h2 class="modal-title"> PEPE <p> TATUAPÉ </p>
+							</h2>
+							<button type="button" class="close" data-dismiss="modal" aria-label="Fechar">
+								<span aria-hidden="true">&times;</span>
+							</button>
+						</div>
+						<div class="modal-body">
+							<div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+								<div class="carousel-inner">
+									<div class="carousel-item active">
+										<img class="d-block w-100 info-tatuape" src="img/lojas/tatuape/1.jpg"
+											alt="Primeiro Slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 info-tatuape" src="img/lojas/tatuape/2.jpg"
+											alt="Segundo Slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 info-tatuape" src="img/lojas/tatuape/3.jpg"
+											alt="Terceiro Slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 info-tatuape" src="img/lojas/tatuape/4.jpg"
+											alt="Terceiro Slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 info-tatuape" src="img/lojas/tatuape/5.jpg"
+											alt="Terceiro Slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 info-tatuape" src="img/lojas/tatuape/6.jpg"
+											alt="Terceiro Slide">
+									</div>
+									<div class="carousel-item">
+										<img class="d-block w-100 info-tatuape" src="img/lojas/tatuape/7.jpg"
+											alt="Terceiro Slide">
+									</div>
+								</div>
+								<a class="carousel-control-prev" href="#carouselExampleControls" role="button"
+									data-slide="prev">
+									<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+									<span class="sr-only">Anterior</span>
+								</a>
+								<a class="carousel-control-next" href="#carouselExampleControls" role="button"
+									data-slide="next">
+									<span class="carousel-control-next-icon" aria-hidden="true"></span>
+									<span class="sr-only">Próximo</span>
+								</a>
+							</div>
+							<div class="text">
+								O Supermercado Pepe chegou ao Tatuapé.
+								A nova loja está bem ao lado do Largo São José do Maranhão,
+								na Praça Doutor Almeida Junqueira, 44, e espera a todos para uma visita.
+								Quem conhece a tradição de uma rede fundada há 65 anos, sabe que a escolha
+								do bairro não foi por acaso. Tanto é que a empresa criou uma infraestrutura
+								diferenciada para garantir o conforto dos clientes, aliada a produtos de alta
+								qualidade e preços supercompetitivos.
+
+								Aberto de segunda a sábado, das 8 às 21 horas; e aos domingos e feriados, das 8 às 14
+								horas,
+								o Pepe traz à região o feirão de ofertas especiais de frutas, legumes e verduras,
+								sempre aos sábados e domingos. Não dá para perder, pois são opções da estação
+								e outras que também recebem um acompanhamento especializado de conservação e
+								normatização.
+								A qualidade do Pepe pode ser vista não só no atendimento, mas também na variedade de
+								produtos
+								nacionais e importados. Esse cuidado com o cliente faz parte da história da rede,
+								que sempre avalia as necessidades de cada região. Por conta disso e pensando em dar
+								comodidade aos seus consumidores, o supermercado disponibiliza um setor de hortifruti,
+								além de adega, açougue e padaria.
+
+								<br>
+								<br>
+
+								Com funcionários altamente capacitados, o Pepe está à disposição para orientar os seus
+								visitantes
+								e ainda garantir a satisfação de todos. E para fortalecer ainda mais a relação de
+								empatia,
+								a diretoria planejou corredores largos, áreas climatizadas e um amplo estacionamento.
+								Vale a pena conhecer mais esta opção de compras, pois são diversas marcas e produtos,
+								sem contar as muitas novidades que o Pepe prepara com a intenção de surpreender os
+								clientes.
+								Entre elas estão as promoções e os eventos organizados pelo supermercado. No encontro
+								mais
+								recente, a empresa reuniu, em seu estacionamento, diversos carros esportivos como
+								Porsche,
+								Ferrari, Lamborghini, entre outros. Corra e aproveite!
+
+								<div id="map-container-google-8" class="z-depth-1-half map-container-5"
+									style="height: 300px">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3658.0123078648794!2d-46.56118823656517!3d-23.532059730956778!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce5fa5ca0612e9%3A0x29ccca77c99cf90b!2sSupermercado%20Pepe!5e0!3m2!1spt-BR!2sbr!4v1579094757827!5m2!1spt-BR!2sbr"
+										frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+									</iframe>
+								</div>
+							</div>
+						</div>
+						<div class="modal-footer">
+							<button type="button" class="btn btn-primary" data-dismiss="modal">Fechar</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-------------------------------------------------------------------------------------->
+</body>
+<script type="text/javascript" src="js/events.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js'></script>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+	integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+	crossorigin="anonymous"></script>
+<script src="https://unpkg.com/flickity@2.0/dist/flickity.pkgd.min.js"></script>
+<script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.0/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+	integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+	crossorigin="anonymous"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+
+</html>
